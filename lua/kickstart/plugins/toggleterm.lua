@@ -3,6 +3,7 @@ return {
   version = '*',
   config = true,
   keys = {
-    { '<leader>tt', '<cmd>ToggleTerm<cr>', desc = 'Toggle Terminal' },
+    { '<leader>tth', '<cmd>ToggleTerm<cr>', desc = 'Toggle Terminal' },
+    { '<leader>ttf', '<cmd>ToggleTerm direction=float<cr>', desc = 'Toggle Terminal Float' },
   },
 }
