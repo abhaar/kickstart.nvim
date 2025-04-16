@@ -1,9 +1,11 @@
 return {
   'akinsho/toggleterm.nvim',
   version = '*',
-  config = true,
-  keys = {
-    { '<leader>tth', '<cmd>ToggleTerm<cr>', desc = 'Toggle Terminal' },
-    { '<leader>ttf', '<cmd>ToggleTerm direction=float<cr>', desc = 'Toggle Terminal Float' },
-  },
+  config = function()
+    require('toggleterm').setup {
+      persist_mode = false,
+      start_in_insert = true,
+      close_on_exit = true,
+    }
+  end,
 }
