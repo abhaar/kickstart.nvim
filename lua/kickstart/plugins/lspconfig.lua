@@ -210,6 +210,12 @@ return {
       local servers = {
         -- clangd = {},
         gopls = {},
+        -- Install via go install github.com/bufbuild/buf-language-server/cmd/bufls@latest
+        buf_ls = {
+          cmd = { 'buf', 'ls', 'serve' },
+          filetypes = { 'proto' },
+          root_dir = require('lspconfig.util').root_pattern('buf.yaml', '.git'),
+        },
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
