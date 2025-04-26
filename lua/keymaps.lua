@@ -51,6 +51,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-vim.cmd [[
-  tnoremap <Esc> <C-\><C-n>
-]]
+-- vim.cmd [[
+--   tnoremap <Esc> <C-\><C-n>
+-- ]]
