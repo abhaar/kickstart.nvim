@@ -51,16 +51,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-local function open_new_horizontal_term()
-  local Terminal = require('toggleterm.terminal').Terminal
-  local term = Terminal:new {
-    direction = 'horizontal',
-  }
-  term:toggle()
-end
-
-vim.keymap.set('n', '<C-_>', open_new_horizontal_term, { noremap = true, silent = true })
-
 vim.cmd [[
   tnoremap <Esc> <C-\><C-n>
 ]]
