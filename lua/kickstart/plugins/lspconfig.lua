@@ -209,7 +209,13 @@ return {
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        gopls = {},
+        gopls = {
+          filetypes = { 'go', 'gomod', 'gowork' },
+          settings = {
+            usePlaceholders = true,
+          },
+        },
+
         -- Install via go install github.com/bufbuild/buf-language-server/cmd/bufls@latest
         buf_ls = {
           cmd = { 'buf', 'ls', 'serve' },
