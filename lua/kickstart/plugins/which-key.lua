@@ -64,6 +64,7 @@ return { -- Useful plugin to show you pending keybinds.
       { '<leader>S', group = 'Lsp [S]aga' },
       { '<leader>l', group = '[L]azygit' },
       { '<leader>Sp', group = '[P]eek' },
+      { '<leader>d', group = '[D]ebugger' },
     },
   },
 }
